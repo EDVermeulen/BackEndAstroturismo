@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AstroTurismo</title>
+    <link rel="stylesheet" href="./styles/registro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="./images/telescopio.png" sizes="32x32" type="image/png">
+  </head>
+  <body>
+    <!--CONTENIDO GENERAL DEL HEADER INCLUYENDO AL MISMO NAVBAR DENTRO -->
+    <header class="header">
+      <div class="navbar">
+        <a href="index.html"><img class="logo" src="./images/logo1.png" alt="logoStarGazers"></a>            
+        <ul class="lista1">
+          <li><a href="quienes.html">Quienes somos?</a></li>
+          <li><a href="lugares.html">Lugares</a></li>
+        </ul>
+        <ul class="lista2">
+          <li><a href="inicioSesion.html">Iniciar sesión</a></li>
+          <li id="registro"><a href="registro.html">Registrate</a></li>
+        </ul>
+      </div>
+    </header>
+    <!--CONTENIDO PRINCIPAL DE NUESTRO MAIN -->
+    <main class="main">
+        <div class="formulario">
+            <h1>☆ ☆ ☆ ☆ ☆ ☆ ☆ Registrate  ☆ ☆ ☆ ☆ ☆ ☆ </h1>
+            <form class="formulario" action="#">
+              <input type="text" id="nombreApellido" placeholder="Nombre y Apellido">
+              <input type="email" id="email" placeholder="Ingrese su Email">
+              <input type="password" id="password" placeholder="Ingrese su contraseña">
+              <input type="password" id="confirmPassword" placeholder="Repita la contraseña">
+              <label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades de ©StarGazers?</label>
+              <fieldset>
+                <legend>¿Cómo le gustaría que lo contactemos?</legend>
+                <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>                
+                <label for="radio-instagram"><input type="radio" name="contacto" value="instagram" id="radio-instagram">Instagram</label>
+                <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+                <label for="radio-facebook"><input type="radio" name="contacto" value="facebook" id="radio-facebook" checked>Facebook</label>
+              </fieldset>
+              <button type="button" class="btn1">Resetear</button>
+              <button type="button" class="btn2">Registrar</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+      <span class="Contacto">☆Star Gazers☆<br> AstroTurismo<br>  Argentina  </span>
+      <img class="logo1" src="./images/logo1.png" alt="logoStarGazers">
+      <span class="copy2"> ©StarGazers <br> AstroTurismo.</span>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>

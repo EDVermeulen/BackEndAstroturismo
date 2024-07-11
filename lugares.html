@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AstroTurismo</title>
+    <link rel="stylesheet" href="./styles/lugares.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="./images/telescopio.png" sizes="32x32" type="image/png">
+  </head>
+
+  <body>
+    <!-- CONTENIDO GENERAL DEL HEADER INCLUYENDO AL MISMO NAVBAR DENTRO -->
+    <header class="header">
+      <div class="navbar">
+        <a href="index.html"><img class="logo" src="./images/logo1.png" alt="logoStarGazers"></a>            
+        <ul class="lista1">
+          <li><a href="quienes.html" >Quienes somos?</a></li>
+          <li><a href="#" class="subrayado-permanente">Lugares</a></li>
+        </ul>
+        <ul class="lista2">
+          <li><a href="inicioSesion.html">Iniciar sesión</a></li>
+          <li id="registro"><a href="registro.html">Registrate</a></li>
+        </ul>
+      </div>
+    </header>
+    <!-- CONTENIDO PRINCIPAL DE LUGARES-->
+    <main>
+    <!-- PRIMER LISTA DE CONTENIDOS-->
+    <div class="contenido">
+      <div id="pagina1" class="pagina activa">
+        <button class="btn" onclick="mostrarPagina('pagina2')">→</button>
+        <div id="listaLugares" class="grid-container">
+          <div class="sitio1" onclick="expandirCard(1)">
+            <p>SAN JUAN - Calingasta<br>Complejo Astronómico El Leoncito (CASLEO)</p>
+          </div>
+          <div class="sitio2"  onclick="expandirCard(2)">
+            <p>NEUQUEN - Las Ovejas<br>Lagunas de Epu Lauquen</p>
+          </div>
+          <div class="sitio3"  onclick="expandirCard(3)">
+            <p>SAN LUIS - La Punta<br>Parque Astronómico La Punta PALP</p>
+          </div>
+          <div class="sitio4"  onclick="expandirCard(4)">
+            <p>MENDOZA - Malargüe<br>Observatorio Astronomico y Cultural Pehuenche</p>
+          </div>
+          <div class="sitio5"  onclick="expandirCard(5)">
+            <p>CORDOBA - Capilla del monte<br>Puesto Pavon</p>
+          </div>
+          <div class="sitio6"  onclick="expandirCard(6)">
+            <p>CORDOBA - Falda del Carmen<br>Observatorio Astronómico de Cordoba UNC</p>
+          </div>
+          <div class="sitio7"  onclick="expandirCard(7)">
+            <p>CORDOBA - Cerro Champaqui</p>
+          </div>
+          <div class="sitio8"  onclick="expandirCard(8)">
+            <p>TUCUMAN - Amaicha del Valle<br>Observatorio Astronómico Ampimpa</p>
+          </div>
+          <div class="sitio9"  onclick="expandirCard(9)">
+            <p>CORRIENTES - Esteros del Ibera</p>
+          </div>
+        </div>
+      </div>
+      <div class="tarjeta" id="tarjeta1">
+        <div class="contenido-tarjeta">
+          <h1>El Leoncito<br> - San Juan -</h1>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4234.32769548293!2d-69.2962716!3d-31.7979014!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9686e9fba74f7b57%3A0xd5f9bbc6d84e548a!2sComplejo%20Astronómico%20El%20Leoncito%20(CASLEO)!5e1!3m2!1ses!2sar!4v1713129604510!5m2!1ses!2sar" style="border:0;border-radius: 15px;margin-top:-20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <p>El Valle de Calingasta se encuentra rodeado por la precordillera y cordillera de los Andes que impactan con sus amplias vistas. El Cerro Mercedario con sus 6.770 metros de altura se puede observar desde aquí. Uno de los circuitos estrella de nuestra cordillera es el Balcón de los 6 mil, una travesía de 10 días aproximadamente que te lleva a lo más alto y desafía tus instintos.<br><br>Sitio de reservas:<a href="https://reservascasleo.com/"><br>reservascasleo.com</a></p>
+          <button class="btn3" onclick="cerrarTarjeta(1)">←</button>
+        </div>
+      </div> 
+      <div class="tarjeta" id="tarjeta2">
+        <div class="contenido-tarjeta">
+          <h1>Las Ovejas<br> - Neuquen -</h1>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d144282.0190500565!2d-70.93482762073693!3d-36.95698582952324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x966e666d2314f46d%3A0x767d9b49d3bb52ef!2sLagunas%20de%20Epu%20Lauquen!5e0!3m2!1ses-419!2sar!4v1713120386399!5m2!1ses-419!2sar" style="border:0;border-radius: 15px;margin-top:-20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <p>Vista panorámica de Las Ovejas. Montañas, ríos y lagunas ofrecen a los visitantes actividades de aventura como trekking, mountain bike, kayak, cabalgatas en un marco natural extraordinario propio del norte neuquino.<br><br>Sitio de reservas:<a href="https://www.lasovejaspatagonia.com.ar/atractivo/mirador-del-ex-aerodromo/el-mirador#"><br>lasovejaspatagonia.com.ar</a></p>
+          <button class="btn3" onclick="cerrarTarjeta(2)">←</button>
+        </div>
+      </div> 
+      <div class="tarjeta" id="tarjeta3">
+        <div class="contenido-tarjeta">
+          <h1>La Punta<br> - San Luis -</h1>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3340.3367429463397!2d-66.31315862341822!3d-33.152785273508854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d4413f94edbfd1%3A0x7c32bcfe606051e8!2sParque%20Astron%C3%B3mico%20La%20Punta%20PALP!5e0!3m2!1ses-419!2sar!4v1713120442468!5m2!1ses-419!2sar" style="border:0;border-radius: 15px;margin-top:-20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <p>Ubicado en el campus de la Universidad de La Punta, el PALP es un espacio que ofrece propuestas de divulgación científica para explorar el fascinante mundo de la astronomía, a través de distintas actividades para toda la familia.<br><br>Sitio de reservas:<a href="https://ciudaddelapunta.gob.ar/01/#contacto"><br>ciudaddelapunta.gob.ar</a></p>
+          <button class="btn3" onclick="cerrarTarjeta(3)">←</button>
+        </div>
+      </div> 
+      <div class="tarjeta" id="tarjeta4">
+        <div class="contenido-tarjeta">
+          <h1>Observatorio Astronomico Pehuenche<br> - Mendoza -</h1>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3247.92278906265!2d-69.60206312334144!3d-35.506187372644376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967a7f7d43492033%3A0xf1d98a9fa8bc6799!2sObservatorio%20Astron%C3%B3mico%20Pehuenche!5e0!3m2!1ses-419!2sar!4v1713120527844!5m2!1ses-419!2sar" style="border:0;border-radius: 15px;margin-top:-20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <p>Malargüe cuenta con atracciones turísticas notables. Desde el Payén, tierra de
+            volcanes y campos de lava y escoria; pasando por Llancanelo humedal, habitat
+            de aves acuáticas y la cordillera signada por lugares como Las Leñas, Valle
+            Hermoso, termas en Los Molles, los Castillos de Pincheira.<br><br>Sitio de reservas:<a href="https://www.malargue.tur.ar/observatorios-astronomicos/"><br>malargue.tur.ar</a></p>
+          <button class="btn3" onclick="cerrarTarjeta(4)">←</button>
+        </div>
+      </div> 
+      <div class="tarjeta" id="tarjeta5">
+        <div class="contenido-tarjeta">
+          <h1>Capilla del monte<br> - Cordoba -</h1>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27400.35659686941!2d-64.55280104669407!3d-30.85742701953486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d8d8977ba760d%3A0x6a90e69fd00b0cd7!2sCapilla%20del%20Monte%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1713120588374!5m2!1ses-419!2sar" style="border:0;border-radius: 15px;margin-top:-20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <p>Emblemática por poseer uno de los picos montañosos más altos de la provincia y la sexta Maravilla Natural de Córdoba, esta localidad tiene como postal clásica el Cerro Uritorco. Ubicado a 1979 msnm, no solo es visitado por su belleza natural y las increíbles panorámicas que regala su cima; también, recibe interesados por los mitos de apariciones extraterrestres en la zona.Info sobre el Lugar mapas,videos,img,etc.<br><br>Sitio de reservas:<a href="https://www.turismocapilla.gob.ar/alojamientos/puesto-pavn/211/"><br>turismocapilla.gob.ar</a></p>
+          <button class="btn3" onclick="cerrarTarjeta(5)">←</button>
+        </div>
+      </div> 
+      <div class="tarjeta" id="tarjeta6">
+        <div class="contenido-tarjeta">
+          <h1>Falda del carmen<br> - Cordoba -</h1>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.786369346156!2d-64.2013266234715!3d-31.420011474260036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a27e84ea72c5%3A0x4b2df0340a54c6dc!2sObservatorio%20Astron%C3%B3mico%20de%20C%C3%B3rdoba%20(O.A.C.)%20%7C%20U.N.C.!5e0!3m2!1ses-419!2sar!4v1713120717145!5m2!1ses-419!2sar" width="800" height="100" style="border:0;border-radius: 15px;margin-top:-20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <p>Falda del Carmen es un pequeño enclave cordobés en el departamento de Santa María, ubicado a siete kilómetros de Alta Gracia. Una región en la que se respira tranquilidad y propone el disfrute de diversos paseos a la orilla del arroyo homónimo. Recorriendo sus senderos, llama la atención la capilla Nuestra Señora del Carmen, construcción pintoresca emplazada en un entorno de plena naturaleza.<br><br>Sitio de reservas:<a href="https://oac.unc.edu.ar/"><br>oac.unc.edu.ar/</a></p>
+          <button class="btn3" onclick="cerrarTarjeta(6)">←</button>
+        </div>
+      </div>
+      <div class="tarjeta" id="tarjeta7">
+        <div class="contenido-tarjeta">
+          <h1>Cerro Champaqui<br> - Cordoba -</h1>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16096.992668652543!2d-64.95036117713754!3d-31.98866991527023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d2d23c48bb2403%3A0x7cf2a17a5c7ba8d!2sCerro%20Champaqui!5e0!3m2!1ses-419!2sar!4v1713120778522!5m2!1ses-419!2sar" style="border:0;border-radius: 15px;margin-top:-20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <p>Su cumbre alcanza los 2790 msnm y es la más alta de Córdoba. Durante el camino es posible visualizar flora nativa, como los árboles de Tabaquillo y Maytén, además de arroyos prístinos, formaciones graníticas y extensos valles. Desde la cima, se puede observar: el Valle de Traslasierras (al oeste) y el Valle de Calamuchita (al este).<br><br>Sitio de reservas:<a href="https://www.cordobaturismo.gov.ar/experiencia/cerro-champaqui/"><br>cordobaturismo.gov.ar/</a></p>
+          <button class="btn3" onclick="cerrarTarjeta(7)">←</button>
+        </div>
+      </div> 
+      <div class="tarjeta" id="tarjeta8">
+        <div class="contenido-tarjeta">
+          <h1>Amaicha del Valle<br> - Tucuman -</h1>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16967.154509199783!2d-65.8602337311656!3d-26.61949645816883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9422021b7d2b78b7%3A0xf341f9e783b9cc72!2sObservatorio%20Astron%C3%B3mico%20Ampimpa!5e0!3m2!1ses-419!2sar!4v1713120844685!5m2!1ses-419!2sar" style="border:0;border-radius: 15px;margin-top:-20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <p>Un legado histórico y arqueológico destacado, un microclima para disfrutar y años de tradiciones, son los condimentos que hacen de Amaicha uno de los imperdibles de tu visita a Tucumán. A 164 kilómetros de la capital tucumana y a 2000 metros de altura sobre el nivel del mar, Amaicha del Valle goza de temperaturas medias de 20º C y un clima semiárido con un promedio anual de 360 días soleados<br><br>Sitio de reservas:<a href="https://www.observatorioampimpa.com"><br>observatorioampimpa.com</a></p>
+          <button class="btn3" onclick="cerrarTarjeta(8)">←</button>
+        </div>
+      </div>
+      <div class="tarjeta" id="tarjeta9">
+        <div class="contenido-tarjeta">
+          <h1>Esteros del iberá<br> - Corrientes -</h1>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d224742.3349831803!2d-57.4302965832572!3d-28.340735147982674!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94511438d866a9c9%3A0x1b0835ed6b3e92c5!2sParque%20Nacional%20Iber%C3%A1!5e0!3m2!1ses-419!2sar!4v1713120961922!5m2!1ses-419!2sar" style="border:0;border-radius: 15px;margin-top:-20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <p>El Parque Iberá o “Agua Brillante” en guaraní, es un lugar de ensueños ubicado en el corazón de la Provincia. Los antiguos cauces del Río Paraná forman una compleja red de humedales, bañados, esteros, lagunas, embalsados y cursos de origen pluvial.<br><br>Sitio de reservas:<a href="https://parqueibera.gob.ar/experiencia/astroturismo/"><br>parqueibera.gob.ar</a></p>
+          <button class="btn3" onclick="cerrarTarjeta(9)">←</button>
+        </div>
+      </div>
+      <!--SEGUNDA LISTA DE CONTENIDOS-->
+      <div id="pagina2" class="pagina">
+        <button class="btn2" onclick="mostrarPagina('pagina1')">←</button>
+        <div id="listaLugares2" class="grid-container">
+          <div class="sitio10"  onclick="expandirCard(10)">
+            <p>MISIONES - Villa Salto Encantado<br>Parque Provincial Salto Encantado</p>
+          </div>
+          <div class="sitio11"  onclick="expandirCard(11)">
+            <p>CATAMARCA - Aconquija<br>Planetario Municipal “Janaxpacha Huasi”</p>
+          </div>
+          <div class="sitio12"  onclick="expandirCard(12)">
+            <p>RIO NEGRO - Salinas del Gualicho</p>
+          </div>
+          <div class="sitio13"  onclick="expandirCard(13)">
+            <p>CHACHO - Campo del cielo<br>Reserva Pigüen N'onaxá</p>
+          </div>
+          <div class="sitio14"  onclick="expandirCard(14)">
+            <p>BUENOS AIRES - CABA<br>Planetario Galileo Galilei</p>
+          </div>
+          <div class="sitio15"  onclick="expandirCard(15)">
+            <p>BUENOS AIRES - La Plata<br>Planetario Universidad Nacional de la Plata</p>
+          </div>
+          <div class="sitio16"  onclick="expandirCard(16)">
+            <p>BUENOS AIRES - Sierra de la Ventana</p>
+          </div>
+          <div class="sitio17"  onclick="expandirCard(17)">
+            <p>LA PAMPA - Reserva Provincial Parque Luro</p>
+          </div>
+          <div class="sitio18"  onclick="expandirCard(18)">
+            <p>JUJUY - Salinas Grandes</p>
+          </div>
+        </div>
+      </div>
+      <div class="tarjeta" id="tarjeta10">
+        <div class="contenido-tarjeta">
+          <h1>Villa salto encantado<br> - Misiones -</h1>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5014.636739690778!2d-54.830006867746796!3d-27.05914677087467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f9c8c90cd9d24f%3A0xb511d9020b439747!2sParque%20Provincial%20Salto%20Encantado%2C%20Misiones!5e1!3m2!1ses!2sar!4v1712727587141!5m2!1ses!2sar" style="border:0;border-radius: 15px;margin-top:-20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <p>Cuenta con una superficie total de 13.227 hectáreas siendo una de las áreas protegidas más importantes del centro de la provincia. Avistaje de aves, flora y fauna.<br><br>Sitio de reservas:<a href="https://misiones.tur.ar/encantado"><br>misiones.tur.ar</a></p>
+          <button class="btn3" onclick="cerrarTarjeta(10)">←</button>
+        </div>
+      </div> 
+      <div class="tarjeta" id="tarjeta11">
+        <div class="contenido-tarjeta">
+          <h1>Aconquija<br> - Catamarca -</h1>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14159.89211894113!2d-66.0125499!3d-27.470099!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94216684481ec0db%3A0xaf4014dbde1c1969!2sPlanetario%20Municipal%20Janaxpacha%20Huasi!5e0!3m2!1ses-419!2sar!4v1713132741052!5m2!1ses-419!2sar" style="border:0;border-radius: 15px;margin-top:-20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <p>Ubicado en una zona montañosa al noreste de la provincia de Catamarca, en el límite con Tucumán. Se trata de un lugar paradisíaco, a solo 150 kilómetros de la Ciudad Capital. Su patrimonio natural posee, entre sus recursos más importantes, un bellísimo escenario paisajístico. Posee un singular microclima que hace que tenga una vegetación abundante en el que se puede encontrar bosques de alisos, yungas y otras especies propias de los lugares con clima húmedo.<br><br>Sitio de reservas:<a href="https://turismo.catamarca.gob.ar/municipio-de-aconquija"><br>turismo.catamarca.gob.ar</a></p>
+          <button class="btn3" onclick="cerrarTarjeta(11)">←</button>
+        </div>
+      </div> 
+      <div class="tarjeta" id="tarjeta12">
+        <div class="contenido-tarjeta">
+          <h1>Salinas del gualicho<br> - Rio Negro -</h1>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12156.907124862293!2d-65.23472220000001!3d-40.38166615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95fb06f9d10716a9%3A0x5dc62d84abbbb25d!2sSalina%20del%20Gualicho!5e0!3m2!1ses-419!2sar!4v1713132984675!5m2!1ses-419!2sar" style="border:0;border-radius: 15px;margin-top:-20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <p>Quienes vayan de viaje a Las Grutas o San Antonio Oeste pueden visitar las Salinas del Gualicho, ubicadas a 50 km al oeste de la villa balnearia. Son las mas grandes del país extendiendose a lo largo de 35 kilometros con la franja mas ancha de unos 18 kilometros.<br><br>Sitio de reservas:<a href="https://turismo.rionegro.gov.ar/actividad/astroturismo_302"><br>turismo.rionegro.gov.ar</a></p>
+          <button class="btn3" onclick="cerrarTarjeta(12)">←</button>
+        </div>
+      </div> 
+      <div class="tarjeta" id="tarjeta13">
+        <div class="contenido-tarjeta">
+          <h1>Campo del cielo<br> - Chaco -</h1>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3535.486107535669!2d-61.68429762361769!3d-27.609457622677184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94388d3eb642219f%3A0xef04ca857f48960e!2sCampo%20del%20Cielo%20-%20Pig%C3%BCen%20N&#39;onax%C3%A1!5e0!3m2!1ses!2sar!4v1713133247464!5m2!1ses!2sar" style="border:0;border-radius: 15px;margin-top:-20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <p>La Reserva Natural y Cultural Pigüen N'onaxá ubicada a unos 12 km de Gancedo, a 350 km de Resistencia y 280 km de Santiago del Estero, espera a visitantes con un Centro de Interpretación de Campo del Cielo, región que fue testigo privilegiado de un fenómeno único ocurrido hace 4000 años, y con "Chaco" y "Gancedo", dos de los meteoritos más grandes del mundo, es uno de los principales atractivos de nuestra provincia.<br><br>Sitio de reservas:<a href="https://turismo.chaco.gob.ar/destinations/campo-del-cielo/"><br>turismo.chaco.gob.ar</a></p>
+          <button class="btn3" onclick="cerrarTarjeta(13)">←</button>
+        </div>
+      </div> 
+      <div class="tarjeta" id="tarjeta14">
+        <div class="contenido-tarjeta">
+          <h1>Planetario Galileo Galilei<br>  - CABA -</h1>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13141.526293587844!2d-58.412871200000005!3d-34.569210399999996!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb57475fd5245%3A0x5eefd3cd753143d7!2sPlanetario%20Galileo%20Galilei!5e0!3m2!1ses-419!2sar!4v1712857917442!5m2!1ses-419!2sar" style="border:0;border-radius: 15px;margin-top:-20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <p>El Planetario es el principal centro de divulgación de astronomía de la ciudad. Cuenta con una sala de proyección semiesférica con trescientas sesenta butacas reclinables y una cúpula de veinte metros de diámetro donde se reproducen cerca de 8.900 estrellas, planetas y satélites del universo, gracias a un imponente equipo (único en Latinoamérica) que contiene seis proyectores Sky-Skan con resolución 8K, lo que indica que el domo contiene 38 millones de píxeles.<br><br>Sitio de reservas:<a href="https://planetario.buenosaires.gob.ar/"><br>planetario.buenosaires.gob.ar</a></p>
+          <button class="btn3" onclick="cerrarTarjeta(14)">←</button>
+        </div>
+      </div> 
+      <div class="tarjeta" id="tarjeta15">
+        <div class="contenido-tarjeta">
+          <h1>Planetario UNLP<br> - Buenos Aires -</h1>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d972.7381073860153!2d-57.9325349603372!3d-34.909261343375505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e6115bf4f945%3A0x1c0e65c064600504!2sPlanetarium%20of%20La%20Plata!5e0!3m2!1sen!2sar!4v1712851713452!5m2!1sen!2sar" style="border:0;border-radius: 15px;margin-top:-20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <p>Desde su inauguración en junio de 2013, el Planetario UNLP ha sido concebido no sólo como un centro de divulgación científica,  sino también como un lugar de encuentro e interacción de las múltiples disciplinas que se desarrollan en la Universidad Nacional de La Plata.<br>Sitio de reservas:<a href="http://planetario.unlp.edu.ar"><br>planetario.unlp.edu.ar</a><br>Sitio de Universidad:<a href="https://www.fcaglp.unlp.edu.ar/"><br>fcaglp.unlp.edu.ar</a></p>
+          <button class="btn3" onclick="cerrarTarjeta(15)">←</button>
+        </div>
+      </div>
+      <div class="tarjeta" id="tarjeta16">
+        <div class="contenido-tarjeta">
+          <h1>Sierra de la ventana<br> - Buenos Aires -</h1>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d392.2582197248454!2d-61.793527438555095!3d-38.13866391737616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95eceeb55159c9f9%3A0x8c040277e71a83f3!2sTourist%20Office%20Sierra%20de%20la%20Ventana!5e0!3m2!1sen!2sar!4v1712849412925!5m2!1sen!2sar" style="border:0;border-radius: 15px;margin-top:-20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <p>Ubicada en el sudoeste de la provincia de Buenos Aires, Sierra de la Ventana es una verdadera reserva de múltiples atractivos naturales, históricos y culturales. A lo largo de esta región turística de 180 kilómetros de cordones serranos con una altitud máxima de 1239 metros en el Cerro Tres Picos, el visitante dispone de ellos para que conozca y disfrute de sitios de prístina belleza, en sus vacaciones en pareja o familia.<br><br>Sitio de consultas:<a href="https://www.tierraventana.com.ar/astroturismo-en-sierra-de-la-ventana.html"><br>astroturismo en sierra de la ventana</a></p>
+          <button class="btn3" onclick="cerrarTarjeta(16)">←</button>
+        </div>
+      </div> 
+      <div class="tarjeta" id="tarjeta17">
+        <div class="contenido-tarjeta">
+          <h1>Reserva Parque Luro<br> - La Pampa -</h1>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11086.071547374986!2d-64.28804072934436!3d-36.62444438986473!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95c2cc53b65eb8a7%3A0x4490136c7871d4aa!2sSecretaría%20de%20Turismo%20de%20la%20Pampa!5e0!3m2!1ses!2sar!4v1712850418073!5m2!1ses!2sar" style="border:0;border-radius: 15px;margin-top:-20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <p>El Parque Luro es una reserva provincial pampeana, declarada área protegida sin aprovechamiento productivo y Patrimonio Natural, Histórico y Cultural, el 30 de mayo de 1996 y en el año 1997 el día 25 de julio, respectivamente. El parque está ubicado en el departamento Toay a 35 km al sur de la ciudad de Santa Rosa, sobre la RN 35.<br><br>Sitio de consultas:<a href="https://turismo.lapampa.gob.ar/"><br>turismo.lapampa.gob.ar</a></p>
+          <button class="btn3" onclick="cerrarTarjeta(17)">←</button>
+        </div>
+      </div>
+      <div class="tarjeta" id="tarjeta18">
+        <div class="contenido-tarjeta">
+          <h1>Salinas Grandes<br> - Jujuy -</h1>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1828.1166765854498!2d-65.88499495823692!3d-23.595965340509974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x940355e2743f553b%3A0x1b5f68b97e088f4a!2sSalinas%20Grandes%2C%20Jujuy%2C%20Argentina!5e0!3m2!1ses!2sar!4v1713133972121!5m2!1ses!2sar" style="border:0;border-radius: 15px;margin-top:-20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <p>Geográficamente las Salinas Grandes se ubican tanto en la Provincia Jujuy como en la Provincia Salta a 3,450 msnm y es el cuarto salar más grande de Sudamérica. Por cuestiones climatológicas y visuales como recurso turístico son más atractivas del lado jujeño, ya que están más blancas.<br><br>Sitio de reservas:<a href="https://sayhueque.com/es/viaje/glamping-salinas-grandes-argentina/"><br>glamping salinas grandes</a></p>
+          <button class="btn3" onclick="cerrarTarjeta(18)">←</button>
+        </div>
+      </div>
+    </div>
+
+    </main>
+    <footer>
+      <span class="Contacto">☆Star Gazers☆<br> AstroTurismo<br>  Argentina  </span>
+      <img class="logo1" src="./images/logo1.png" alt="logoStarGazers">
+      <span class="copy2"> ©StarGazers <br> AstroTurismo.</span>
+    </footer>
+
+
+    
+    <script src="index.js"></script>
+  </body>
+</html>

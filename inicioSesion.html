@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AstroTurismo</title>
+    <link rel="stylesheet" href="./styles/inicioSesion.css">
+    <link rel="icon" href="./images/telescopio.png" sizes="32x32" type="image/png">
+</head>
+
+<body>
+    <!-- CONTENIDO GENERAL DEL HEADER INCLUYENDO AL MISMO NAVBAR DENTRO -->
+    <header class="header">
+        <div class="navbar">
+          <a href="index.html"><img class="logo" src="./images/logo1.png" alt="logoStarGazers"></a>            
+          <ul class="lista1">
+            <li><a href="quienes.html">Quienes somos?</a></li>
+            <li><a href="lugares.html">Lugares</a></li>
+          </ul>
+          <ul class="lista2">
+            <li><a href="inicioSesion.html">Iniciar sesión</a></li>
+            <li id="registro"><a href="registro.html">Registrate</a></li>
+          </ul>
+        </div>
+      </header>
+    <!-- CONTENIDO PRINCIPAL DE NUESTRO MAIN-->
+    <main class="main">
+        <div class="inicioSesionDiv">
+        <h1>☆ ☆ ☆ ☆ ☆ ☆ Iniciar sesión ☆ ☆ ☆ ☆ ☆ ☆</h1>        
+        <form class="formulario" id="loginForm" action="#">
+            <div class="input-group">
+                <input type="email" placeholder="Email" id="email" required>
+            </div>
+            <div class="input-group">
+                <input type="password" placeholder="Contraseña" id="contraseña" required>
+            </div>
+            <div class="btn-group">
+                <button type="reset" class="btn1">Resetear</button>
+                <button type="submit" class="btn2">Ingresar</button>
+            </div>
+        </form>
+    </div>
+</main>
+
+<footer>
+  <span class="Contacto">☆Star Gazers☆<br> AstroTurismo<br>  Argentina  </span>
+  <img class="logo1" src="./images/logo1.png" alt="logoStarGazers">
+  <span class="copy2"> ©StarGazers <br> AstroTurismo.</span>
+</footer>
+
+<script src="./javaScript/login.js"></script>
+</body>
+</html>

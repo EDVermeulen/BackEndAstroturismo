@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AstroTurismo</title>
+    <link rel="stylesheet" href="./styles/quienes.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="./images/telescopio.png" sizes="32x32" type="image/png">
+  </head>
+
+  <body>
+    <!--CONTENIDO GENERAL DEL HEADER INCLUYENDO AL MISMO NAVBAR DENTRO-->
+    <header class="header">
+      <div class="navbar">
+        <a href="index.html"><img class="logo" src="./images/logo1.png" alt="logoStarGazers"></a>            
+        <ul class="lista1">
+          <li><a href="#" class="subrayado-permanente">Quienes somos?</a></li>
+          <li><a href="lugares.html">Lugares</a></li>
+        </ul>
+        <ul class="lista2">
+          <li><a href="inicioSesion.html">Iniciar sesión</a></li>
+          <li id="registro"><a href="registro.html">Registrate</a></li>
+        </ul>
+      </div>
+    </header>
+    <!--CONTENIDO PRINCIPAL DE NUESTRO HOME-->
+    <main>
+      <div class="contenido">
+        <!--DENTRO DE ESTE DIV ↓, PUEDEN MOSTRARSE TRES TIPOS DE CONTENIDOS MEDIANTE JS-->
+        <div class="textoContenido">
+          <!--PRIMER CONTENIDO DEL DIV ↓-->
+          <div id="pagina1" class="pagina activa">
+            <div class="displayContenido">
+              <h1>¿Quienes somos?</h1>
+              <p class="textoPrincipal">
+                Somos una comunidad apasionada por el astroturismo, unidos por el deseo de compartir experiencias  inolvidables bajo las estrellas.<br> A través de ©StarGazers, recopilamos, documentamos y difundimos información sobre viajes y <a style="color:black;" href="lugares.html">destinos únicos</a> para observar el cosmos.<br><br> Colaboramos con diversas instituciones, organizaciones, empresas y centros turísticos para ofrecer una amplia gama de opciones para disfrutar de una noche mágica bajo el cielo nocturno.<br>
+              </p>
+              <p class="textoUnete">¡Únete a nosotros y descubre la belleza del universo desde diferentes rincones de Argentina!</p><br>
+              <button class="btn" onclick="mostrarPagina('pagina2')">→</button>
+            </div>
+          </div>
+          <!--SEGUNDO CONTENIDO DEL DIV ↓-->
+          <div id="pagina2" class="pagina">
+            <div class="displayContenido">
+              <h2>Intregrantes de la comunidad</h2>
+              <ul>
+                <li class="integrante">Ezequiel Daniel Vermeulen</li>
+                <li class="integrante">Juan Pablo Liendo</li>
+                <li class="integrante">Emiliano Miguel Sartori</li>
+              </ul>
+              <button class="btn" onclick="mostrarPagina('pagina1')">←</button>
+              <button class="btn" onclick="mostrarPagina('pagina3')">→</button>
+            </div>
+          </div>
+          <!--TERCER CONTENIDO DEL DIV ↓-->
+          <div id="pagina3" class="pagina">
+            <div class="displayRedes">
+              <h3>Nuestras Redes</h3>
+              <div class="redes">
+                <a href="https://www.facebook.com"><img src="./images/Facebook.png" alt="facebookLogo"></a>
+                <a href="https://web.whatsapp.com"><img src="./images/whatsappwhatssapp.png" alt="whatsappLogo"></a>
+                <a href="https://www.instagram.com"><img src="./images/instagram.png" alt="instagramLogo"></a>
+              </div>
+            <button class="btn" onclick="mostrarPagina('pagina2')">←</button>              
+            </div>
+          </div>
+        </div>
+        <!--ESTE DIV CONTIENE LA IMAGEN DE LA DERECHA ↓-->
+        <div class="imagenContenido">
+          <img src="./images/Group.png" alt="imageOfGroup">
+        </div>
+      </div>
+    </main>
+    <footer>
+      <span class="Contacto">☆Star Gazers☆<br>  AstroTurismo <br> Argentina  </span>
+      <img class="logo1" src="./images/logo1.png" alt="logoStarGazers">
+      <span class="copy2"> ©StarGazers <br> AstroTurismo.</span>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>

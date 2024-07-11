@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-image: url(../images/fondolug.jpg);
+}
+h1{
+    color:black;
+    text-shadow: 2px 2px 4px rgb(158, 3, 206);
+    margin-bottom: 1vh;
+    margin-top: 0;
+    text-align: center;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 3px solid white;
+    color: white;
+    text-shadow: 2px 2px 4px rgb(158, 3, 206);
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: transparent;
+    color: white;
+    text-shadow: 2px 2px 2px rgb(158, 3, 206);
+    font-size: 1.1rem ;
+    text-align: center;
+}
+form {
+    margin-bottom: 20px;
+}
+label{
+    margin-left: 8vw;
+    color:white;
+    text-shadow: 2px 2px 2px rgb(158, 3, 206);
+    font-size: 1.4rem ;
+}
